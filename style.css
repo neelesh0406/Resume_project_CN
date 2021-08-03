@@ -1,0 +1,592 @@
+body {
+    margin: 0px;
+}
+
+
+/* Body Header */
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#body-header h1{
+    color: white;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 150px;
+    margin-bottom: 7px;
+    text-shadow: 3px 3px 5px black;
+}
+/* Horizontal Lists */
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 6px 11px 8px 0px;
+}
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-menu  li a{
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    transition: color 0.5s, border-bottom 4s, font-size .5s;
+}
+.nav-menu  li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid white;
+    font-size: 1.3rem;
+}
+
+/* Header: Social links */
+
+.horizontal-list li a i {
+    font-size: 1.5rem;
+    margin: 0px 3px;
+    border-radius: 50%;
+    padding: 6px;
+}
+.horizontal-list li a i:hover {
+    box-shadow: 0px 0px 7px 5px rgba(230,196,196,0.3);
+}
+
+/* Burger dropdown Menu  */
+
+#bar {
+    display: none;
+}
+#bar i {
+    color: white;
+    font-size: 3rem;
+    padding: 20px;
+}
+
+/* About container */
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20vh;
+}
+#my-image{
+    height: 7rem;
+    width: 12rem;
+    margin: auto;
+}
+#my-image img{
+    width: 100%;
+    border-radius: 50%;
+    margin-top: -15vh;
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px 3px lightgrey;
+}
+ #about p{
+     margin: auto;
+     color: grey;
+     width: 60%;
+     font-size: 1.1rem;
+     font-family: sans-serif;
+     text-align: justify;
+     line-height: 1.6rem;
+ }
+ #about p span{
+     font-weight: 700;
+     color: #2857a4;
+ }
+
+
+
+/* Section  */
+ section {
+     /* height: 330px; */
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ section:nth-child(2n){
+     background-color: rgb(216, 213, 213,0.4);
+ }
+
+ .section-heading{
+     font-size: 2.5rem;
+     font-family: sans-serif;
+     padding: 24px 2px;
+     color: #2857a4;
+     font-weight: 300;
+ }
+
+ .mb75 {
+     margin-bottom: 75px;
+    }
+
+.mb60 {
+    margin-bottom: 60px;
+}
+    
+
+
+/* Skills Section  */
+#skills-area {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.skills-box {
+    border-radius: 20px;
+    width: 165px;
+    height: 35px;
+    background-color: rgb(190, 183, 183, 0.7);
+    margin: 20px;
+    box-shadow: 1px 1px 2px grey inset;
+}
+.font1rem {
+    font-size: 1rem;
+    color: white;
+    font-family: sans-serif;
+    margin-left: 10px;
+    line-height: 34px;
+}
+.internal-shadow {
+    box-shadow: 2px 0px 2px grey;
+}
+
+ /* skills-color */
+.blue {
+    background-color: #2857a4;
+}
+.orange {
+    background-color: #eb4d1d;
+}
+.pink {
+   background-color: #93738b;
+}
+.green {
+    background-color: #0d8176;
+}
+
+/* skills-container width  */
+.skills-box > div{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 100%;
+}
+
+/* .per-40 {
+    width: 40%;
+}
+.per-50 {
+    width: 50%;
+}
+.per-60 {
+    width: 60%;
+}
+.per-70 {
+    width: 70%;
+}
+.per-80 {
+    width: 80%;
+} */
+
+
+
+/* Portfolio Section  */
+
+#portfolio-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.portfolio-project {
+    width: 25%;
+    height: auto;
+    margin: 16px 7px 9px 9px;
+    padding: 7px 11px;
+    position: relative;
+    max-width: 300px;
+    min-width: 100px;
+    overflow: hidden;
+}
+.portfolio-project img {
+    width: 100%;
+    height: auto;
+}
+.portfolio-details {
+    transition: all .3s;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+    font-size: 2rem;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 40px 1px;
+}
+.portfolio-project:hover {
+    box-shadow: 0px 0px 8px 2px #0072ff;
+}
+.portfolio-project:hover .portfolio-details{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background-color: #80808078;
+}
+
+
+/* Contact section */
+#contact {
+    background: linear-gradient(to right,#2857a4,#403066);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact .section-heading {
+    color: white;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+/* Contact- Form  */
+
+#contact-form {
+    width: 50%;
+    margin-right: 10%;
+}
+
+#contact-form input,textarea {
+    background-color: transparent;
+    width: 100%;
+    padding: 8px 0 5px 7px;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 3px solid white;
+    outline: none;
+    font-size: 1rem;
+    color: white;
+}
+
+.btn-container {
+    text-align: center;
+}
+.btn {
+    background-color: transparent;
+    width: 35%;
+    padding: 14px 5px;
+    border: 2px solid white;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: .9rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-top: 11%;
+}
+.btn:hover {
+    color: wheat;
+    border: 2px solid wheat;
+    box-shadow: 0px 0px 3px 1px gold;
+    transition: all 1s;
+}
+
+#contact-address {
+    width: 50%;
+    font-family: sans-serif;
+}
+#contact-address h2 {
+    color: white;
+    font-size: 1.2rem;
+}
+#contact-address p {
+    color: #b2afaf;
+}
+#contact-address span i{
+    color: white;
+    margin-right: 10px;
+}
+
+/* Contact- social links  */
+
+#contact .horizontal-list li a i {
+    font-size: 1.2rem;
+    margin: 0px 18px 40px 0px;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+
+/* Work Experience Section  */
+
+.timeline {
+    width: 75%;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.timeline-experience {
+    width: 40%;
+    min-height: 150px;
+    position: relative;
+    left: 5%;
+    margin: 5px;
+}
+.timeline-experience:nth-child(2n) {
+    left: 52%;
+}
+
+.timeline-experience:nth-child(2n+1)::after {
+    content: "";
+    position: absolute;
+    top: 34%;
+    right: -12%;
+    background-color: #bbb;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    z-index: 1;
+}
+
+.timeline-experience:nth-child(2n)::after {
+    content: "";
+    position: absolute;
+    top: 34%;
+    left: -9.3%;
+    background-color: #bbb;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    z-index: 1;
+}
+
+.timeline-divider {
+    position: absolute;
+    top: 12%;
+    left: 48%;
+    width: 30px;
+    height: 75%;
+    text-align: center;
+}
+
+#scroll-plane {
+    position: sticky;
+    top: 13%;
+    color: #2857a4;
+    transform: rotate(90deg);
+    font-size: 1.5rem;
+}
+
+.dashed-hr {
+    position: absolute;
+    top: 0%;
+    left: 44%;
+    border-left: 3px dashed #8bc9f4;
+    width: 0px;
+    height: 100%;
+}
+
+.experience-designation {
+    color: #2857a4;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: .5px;
+    font-weight: 600;
+    text-align: right;
+    margin-bottom: 4px;
+}
+
+#experience .experience-designation::before {
+    content: '';
+    position: absolute;
+    left: 3%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png);
+    width: 43px;
+    height: 43px;
+}
+
+.experience-company {
+    color: orange;
+    text-align: right;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.experience-time {
+    color: grey;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    text-align: right;
+    margin-top: 3px;
+}
+
+.experience-description {
+    color: grey;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    text-align: justify;
+    line-height: 1.2rem;
+}
+
+
+/* Education Section */
+
+/* All classes used from Experience section  */
+
+#education .experience-designation::before {
+    content: '';
+    position: absolute;
+    left: -2%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png);
+    width: 73px;
+    height: 43px;
+}
+
+#scroll-car {
+    position: sticky;
+    top: 13%;
+    color: #2857a4;
+    transform: rotate(90deg);
+    font-size: 1.5rem;
+}
+
+/* general */
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Media queries for max-width: 768px  */
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    #portfolio-flexbox {
+        display: block;
+    }
+    
+    .portfolio-project {
+        width: 100%;
+    }
+
+    #contact-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact-form {
+        width: 98%;
+        margin: 0;
+    }
+    .btn {
+        width: 29%;
+        font-size: 0.7rem;
+    }
+
+    #contact-address { 
+        width: 100%;
+        margin-top: 15%;
+    }
+
+    .timeline-divider {
+        position: absolute;
+        top: 12%;
+        left: 5%;
+        width: 30px;
+        height: 75%;
+        text-align: center;
+    }
+
+    .timeline-experience {
+        left: 21%;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .timeline-experience:nth-child(2n) {
+        left: 21%;
+    }
+
+    .timeline-experience:nth-child(2n)::after {
+        left: -19.5%;
+        
+    }
+    .timeline-experience:nth-child(2n+1)::after {
+        left: -19.5%;
+        
+    }
+}
+
+/* Media queries for max-width: 572px  */
+
+@media only screen and (max-width: 572px) {
+    html {
+        font-size: 14px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    #bar {
+        display: block;
+    }
+
+    #body-header {
+        height: 58vh;
+    }
+    
+    #body-header h1 {
+        font-size: 2.3rem;
+        margin-top: 120px;
+    }
+
+    #about {
+        margin-bottom: 8vh;
+    }
+
+    #my-image {
+        width: 11rem;
+    }
+    #my-image img {
+        margin-top: -12vh;
+    }
+    #about p {
+        width: 80%;
+    }
+
+    .btn {
+        width: 38%;
+        font-size: 0.6rem;
+    }
+}
